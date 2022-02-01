@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(2, 48, 49);
+    font-family: "Sora";
+    color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+
+}
+
+.movie-container
+{
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.movie-container select
+{
+    margin:5px 5px;
+    padding:5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: "Sora";
+    font-weight: bold;
+}
+
+.movie-container ul
+{
+    list-style-type: none;
+}
+
+.movie-container ul li
+{
+    display: flex;
+    margin-top:10px;
+}
+.hall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen
+{
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    height: 70px;
+    width:360px;
+}
+
+.seat
+{   
+    margin:3px;
+    height:12px;
+    width:13px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.reserved
+{
+    background-color: blue;
+}
+.seat.sold-out
+{
+    background-color: crimson;
+}
+.seat.Selected
+{
+    background-color: greenyellow;
+}
+.seat.filling-fast
+{
+    background-color: aqua;
+}
+.row
+{
+    display: flex;
+    
+}
+/*SHOWCASE--------------------------*/
+.showcase ul
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.showcase ul li
+{
+    margin-left: 10px;
+    
+}
+.showcase ul li small
+{
+    margin-left: 3px;
+}
+
+.seat:not(.reserved):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:hover{
+    cursor: default;
+    transform: scale(1);
+ }
+.seat:nth-of-type(2)
+{
+    margin-right: 20px;;
+}
+.seat:nth-last-of-type(2)
+{
+    margin-left: 20px;
+}
+
+.status
+{
+    margin:20px;
+}

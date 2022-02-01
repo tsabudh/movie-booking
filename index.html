@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QFX</title>
+</head>
+<body>
+<div class="movie-container">
+    <div class=selector>
+        Pick a movie:
+        <select id="movie">
+            <option value="210">Suryavanshi (Rs.210)</option>
+            <option value="350">Venom (Rs.350)</option>
+            <option value="400">Spiderman: No way Home (Rs.400)</option>
+            <option value="250">Eternals (Rs.250)</option>
+        </select>
+    </div>
+    <div class="showcase">
+        <ul>
+            <li>
+                <div class="seat Selected"></div>
+                <small>Selected</small>
+            </li>
+            <li>
+                <div class="seat sold-out"></div>
+                <small>Sold Out</small>
+            </li>
+
+            <li>
+                <div class="seat reserved"></div>
+                <small>Reserved</small>
+            </li>
+            <li>
+                <div class="seat filling-fast"></div>
+                <small>Filling Fast</small>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hall">
+        <div class="screen"></div>
+        <div class=row>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold-out"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        </div>
+
+        <div class=row>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class=row>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class=row>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class=row>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+
+        <div class=row>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+        </div>
+    </div>
+
+    <div class="status">
+        You have selected <span id="count">0 </span> seats for total price of <span id="price">Rs</span>.
+    </div>
+</div>
+</body>
+
+</html>
+<script src="script.js"></script>
